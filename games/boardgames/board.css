@@ -1,0 +1,79 @@
+* {
+	margin:0;
+	box-sizing:border-box;
+}
+
+body {
+	background:#ffeead;
+}
+
+#game-board {
+	padding-top:2vh;
+	padding-bottom:2vh;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	min-height:100vh;
+	position:relative;
+}
+
+#back-btn {
+	position:absolute;
+	height:4vw;
+	width:4vw;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	background:#4cadcc;
+	border-radius:50%;
+	top:3vw;
+	left:2vw;
+}
+#back-btn:hover {
+	box-shadow:0 0 20px #4cadcc;
+}
+
+#arrow-svg {
+	position:relative;
+	width:90%;
+	filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(171deg) brightness(104%) contrast(102%);
+} 
+
+.full-row {
+	width:100vw;
+	display:flex;
+	justify-content:center;
+}
+.reverse {
+	flex-direction:row-reverse;
+}
+.right-row, .left-row {
+	width:100vw;
+	padding:0 calc(5vw - 8px);
+	position:relative;
+}
+.right-row {
+	display:flex;
+	justify-content:flex-end;
+}
+
+.square {
+	width:10vw;
+	height:10vw;
+	border:0.2vw solid #000;
+	border-radius:15%;
+	text-align:center;
+	font-family:'Caveat';
+	font-size:2.5vw;
+	margin:1px;
+	cursor:default;
+	box-shadow:2px 2px 2px #999;
+	visibility:hidden;
+}
+
+.counter {
+	position:absolute;
+	max-height:4vw;
+	max-width:4vw;
+	cursor:pointer;
+}

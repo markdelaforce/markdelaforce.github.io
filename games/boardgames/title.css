@@ -1,0 +1,84 @@
+* {
+	margin:0;
+	box-sizing:border-box;
+}
+
+body {
+	background:#ffeead;
+}
+
+#page {
+	width:100vw;
+	height:100vh;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:space-evenly;
+	position:relative;
+}
+
+#back-btn {
+	background:#4cadcc;
+	font-family:'Caveat';
+	color:#fff;
+	position:absolute;
+	top:10vh;
+	left:5vw;
+	font-size:2.5vw;
+	border:0;
+	border-radius:15px;
+	width:8vw;
+	cursor:pointer;
+}
+#back-btn:hover {
+	text-shadow:0 0 20px #fff;
+	box-shadow:0 0 10px #4cadcc;
+	font-size:2.6vw;
+}
+
+h1, h2, h3 {
+	text-align:center;
+}
+h1 {
+	color:#ff6f69;
+	font-family:'Spicy Rice';
+	font-size:10vw;
+	-webkit-text-stroke: 0.1vw #cc0700;
+}
+h2 {
+	color:#586ba4;
+	font-family:'Caveat';
+	font-size:8vw;
+}
+h3 {
+	color:#88d8b0;
+	font-family:'Pacifico';
+	font-size:4.5vw;
+}
+
+#start-btn {
+	background:#ffcc5c;
+	font-family:'Spicy Rice';
+	color:#de6b48;
+	width:10vw;
+	height:10vw;
+	border:0;
+	border-radius:50%;
+	font-size:3.2vw;
+	cursor:pointer;
+}
+#start-btn:hover {
+	font-size:3.4vw;
+	text-shadow:0 0 10px #fff;
+	box-shadow:0 0 10px #de6b48;
+}
+
+#credits {
+	color:#ff524d;
+	font-family:'Comic Neue';
+	cursor:pointer;
+	font-size:1.8vw;
+}
+#credits:hover {
+	color:#ff0900;
+}

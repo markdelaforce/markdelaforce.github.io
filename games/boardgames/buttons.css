@@ -1,0 +1,147 @@
+#question-buttons, #dice-roller {
+	position:absolute;
+	height:8vw;
+	border-radius:15px;
+	display:flex;
+	align-items:center;
+	justify-content:space-evenly;
+	top:1vw;
+	transition:opacity 1.5s;
+	opacity:0;
+}
+#question-buttons {
+	width:60vw;
+	left:20vw;
+}
+#dice-roller {
+	box-shadow:2px 2px 5px #666;
+	border:0.2vw solid #fff;
+	background:#f4f0f5;
+	width:30vw;
+	left:45vw;
+}
+
+.btn-holder {
+	height:7.2vw;
+	width:7.2vw;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+.q-btn {
+	height:7vw;
+	width:7vw;
+	border-radius:50%;
+	position:relative;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	border:0.2vw solid #fff;
+	box-shadow:2px 2px 5px #666;
+	opacity:0.8;
+}
+.btn-in-use.q-btn:hover {
+	height:7.2vw;
+	width:7.2vw;
+	cursor:pointer;
+}
+
+#q-btn-1 {
+	background:#e65c00;
+}
+.btn-in-use#q-btn-1:hover {
+	opacity:1;
+	box-shadow:2px 2px 10px #e65c00;
+}
+#q-btn-2 {
+	background:#586ba4;
+}
+.btn-in-use#q-btn-2:hover {
+	opacity:1;
+	box-shadow:2px 2px 10px #586ba4;
+}
+#q-btn-3 {
+	background:#ffcc5c;
+}
+.btn-in-use#q-btn-3:hover {
+	opacity:1;
+	box-shadow:2px 2px 10px #ffcc5c;
+}
+#q-btn-4 {
+	background:#4cadcc;
+}
+.btn-in-use#q-btn-4:hover {
+	opacity:1;
+	box-shadow:2px 2px 10px #4cadcc;
+}
+#q-btn-5 {
+	background:#ff4d4d;
+}
+.btn-in-use#q-btn-5:hover {
+	opacity:1;
+	box-shadow:2px 2px 10px #ff4d4d;
+}
+#q-btn-6 {
+	background:#88d8b0;
+}
+.btn-in-use#q-btn-6:hover {
+	opacity:1;
+	box-shadow:2px 2px 10px #88d8b0;
+}
+
+.q-mark {
+	position:relative;
+	height:80%;
+}
+
+#player-display {
+	position:absolute;
+	height:8vw;
+	width:8vw;
+	border-radius:50%;
+	background:#fff;
+	top:1vw;
+	left:30.5vw;
+	border:0.2vw solid #e6b800;
+	box-shadow:0 0 10px #ffd633;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	transition:opacity 1.5s;
+	opacity:0;
+}
+#player-image {
+	max-height:80%;
+	max-width:80%;
+}
+
+#dice {
+	height:6vw;
+	width:6vw;
+	background:#a214b8;
+	border-radius:15px;
+	box-shadow:2px 2px 4px #999;
+}
+#dice-btn {
+	font-family:'Comic Neue';
+	line-height:6vw;
+	width:12vw;
+	height:6vw;
+	background:#fcb6e1;
+	color:#a214b8;
+	border-radius:15px;
+	border:0;
+	box-shadow:2px 2px 5px #999;
+	font-size:2.2vw;
+	outline: none;
+	transition:opacity 0.5s;
+}
+#dice-btn.working:hover {
+	box-shadow:2px 2px 5px #a214b8;
+	font-size:2.3vw;
+	cursor:pointer;
+}
+.not-working {
+	opacity:0.2;
+	cursor:default;
+}

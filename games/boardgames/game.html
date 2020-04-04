@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang='en'>
+
+<head>
+	<title>boardgames</title>
+	<meta charset='utf-8'>
+	<link rel='stylesheet' type='text/css' href='board.css'>
+	<link rel='stylesheet' type='text/css' href='buttons.css'>
+	<link rel='stylesheet' type='text/css' href='question.css'>
+	<link href="https://fonts.googleapis.com/css?family=Caveat|Comic+Neue" rel="stylesheet">
+</head>
+
+<body>
+	<div id='question'>
+	</div>
+	<div id='outer'>
+		<div id='inner'>
+			<div id='close' onclick='hide()'>X</div>
+			<p id='q-text'></p>
+			<div id='q-number'></div>
+		</div>
+	</div>
+	
+	<div id='game-board'>
+		<div>
+			<div class='full-row'>
+				<div class='square'></div>
+				<div class='square'></div>
+				<div class='square'></div>
+				<div class='square'></div>
+				<div class='square'></div>
+				<div class='square'></div>
+				<div class='square'></div>
+				<div class='square'></div>
+				<div class='square'></div>
+			</div>
+			<div class='right-row'>
+				<a href='counters.html'>
+					<div id='back-btn'>
+						<img id='arrow-svg' src='images/game/back-button.svg'>
+					</div>
+				</a>
+				<div id='question-buttons'>
+					<div class='btn-holder'>
+						<div class='q-btn' id='q-btn-1' onclick='askQuestion("#ff8533")'>
+							<img class='q-mark' src='images/game/question mark.png'>
+						</div>
+					</div>
+					<div class='btn-holder'>
+						<div class='q-btn' id='q-btn-2' onclick='askQuestion("#6a7baf")'>
+							<img class='q-mark' src='images/game/question mark.png'>
+						</div>
+					</div>
+					<div class='btn-holder'>
+						<div class='q-btn' id='q-btn-3' onclick='askQuestion("#ffc64d")'>
+							<img class='q-mark' src='images/game/question mark.png'>
+						</div>
+					</div>
+					<div class='btn-holder'>
+						<div class='q-btn' id='q-btn-4' onclick='askQuestion("#60b6d2")'>
+							<img class='q-mark' src='images/game/question mark.png'>
+						</div>
+					</div>
+					<div class='btn-holder'>
+						<div class='q-btn' id='q-btn-5' onclick='askQuestion("#ff6666")'>
+							<img class='q-mark' src='images/game/question mark.png'>
+						</div>
+					</div>
+					<div class='btn-holder'>
+						<div class='q-btn' id='q-btn-6' onclick='askQuestion("#88d8b0")'>
+							<img class='q-mark' src='images/game/question mark.png'>
+						</div>
+					</div>
+				</div>
+				<div class='square'></div>
+			</div>
+			<div class='full-row reverse'>
+				<div class='square'></div>
+				<div class='square'></div>
+				<div class='square'></div>
+				<div class='square'></div>
+				<div class='square'></div>
+				<div class='square'></div>
+				<div class='square'></div>
+				<div class='square'></div>
+				<div class='square'></div>
+			</div>
+			<div class='left-row'>
+				<div class='square'></div>
+				<div id='player-display'>
+					<img id='player-image'>
+				</div>
+				<div id='dice-roller'>
+					<img id='dice'src='images/game/6.png'>
+					<button onclick='rollDice()' id=dice-btn  class='working'>Roll Dice</button>
+				</div>
+			</div>
+			<div class='full-row'>
+				<div class='square'></div>
+				<div class='square'></div>
+				<div class='square'></div>
+				<div class='square'></div>
+				<div class='square'></div>
+				<div class='square'></div>
+				<div class='square'></div>
+				<div class='square'></div>
+				<div class='square'></div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script src='../draggable.js'></script>
+<script src='set-board.js'></script>
+<script src='game-play.js'></script>
+
+</html>
