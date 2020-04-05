@@ -72,6 +72,7 @@ function showSquare(index) {
 		document.getElementById('question-buttons').style.opacity = '1';
 		document.getElementById('player-display').style.opacity = '1';
 		document.getElementById('dice-roller').style.opacity = '1';
+		document.getElementById('info').style.opacity = '1';
 		return;
 	}
 	setTimeout ( () => {

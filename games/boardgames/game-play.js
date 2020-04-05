@@ -3,6 +3,7 @@ dice = 6,
 player = 0,
 allowRoll = true,
 allowQuestion = false,
+instructionsShowing = false,
 questionButtons = Array.from(document.getElementsByClassName('q-btn')),
 diceImg = document.getElementById('dice'),
 diceBtn = document.getElementById('dice-btn'),
@@ -11,6 +12,8 @@ question = document.getElementById('question'),
 inner = document.getElementById('inner'),
 qText = document.getElementById('q-text'),
 qNumber = document.getElementById('q-number'),
+instructionDiv = document.getElementById('instructions'),
+closeBtn = document.getElementById('close'),
 rollSound = new Audio ('roll sound.mp3'),
 questions = [
 	'What time do you usually have breakfast ?',
@@ -112,14 +115,32 @@ function askQuestion(color) {
 }
 
 function hide() {
-	allowQuestion = false;
-	questionButtons.forEach(button => {
-		button.classList.remove('btn-in-use');
-	});
 	question.style.visibility = 'hidden';
 	question.style.zIndex = '0';
 	outer.style.visibility = 'hidden';
 	outer.style.zIndex = '0';
-	qText.innerHTML = '';
-	qNumber.innerHTML = '';
+	
+	if (instructionsShowing === true) {
+		instructionDiv.style.visibility = 'hidden';
+		instructionsShowing = false;
+	}
+	else {
+		allowQuestion = false;
+		questionButtons.forEach(button => {
+			button.classList.remove('btn-in-use');
+		});
+		qText.innerHTML = '';
+		qNumber.innerHTML = '';
+	}
+}
+
+function instructions() {
+	instructionsShowing = true;
+	instructionDiv.style.visibility = 'visible';
+	question.style.visibility = 'visible';
+	question.style.zIndex = z_index+1;
+	question.style.background = '#fff';
+	outer.style.visibility = 'visible';
+	outer.style.zIndex = z_index+2;
+	closeBtn.style.zIndex = z_index+3;
 }

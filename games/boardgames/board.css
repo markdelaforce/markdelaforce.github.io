@@ -32,12 +32,35 @@ body {
 #back-btn:hover {
 	box-shadow:0 0 20px #4cadcc;
 }
-
 #arrow-svg {
 	position:relative;
 	width:90%;
 	filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(171deg) brightness(104%) contrast(102%);
 } 
+
+#info {
+	top:3vw;
+	right:7.5vw;
+	height:4vw;
+	width:4vw;
+	border-radius:50%;
+	border:0.3vw solid #000;
+	background:#fff;
+	text-align:center;
+	font-size:2vw;
+	line-height:3.5vw;
+	position:absolute;
+	font-family:'Freckle Face';
+	font-size:2.5vw;
+	cursor:pointer;
+	opacity:0;
+	transition:opacity 1.5s;
+}
+#info:hover {
+	opacity:1;
+	box-shadow:0 0 5px #000;
+	font-size:2.7vw;
+}
 
 .full-row {
 	width:100vw;

@@ -7,7 +7,7 @@
 	<link rel='stylesheet' type='text/css' href='board.css'>
 	<link rel='stylesheet' type='text/css' href='buttons.css'>
 	<link rel='stylesheet' type='text/css' href='question.css'>
-	<link href="https://fonts.googleapis.com/css?family=Caveat|Comic+Neue" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Caveat|Comic+Neue|Freckle+Face" rel="stylesheet">
 </head>
 
 <body>
@@ -18,6 +18,13 @@
 			<div id='close' onclick='hide()'>X</div>
 			<p id='q-text'></p>
 			<div id='q-number'></div>
+			<div id ='instructions'>
+				<p class=i-text><span style='color:#4cadcc;'>• Roll the dice (there is a delay after rolling before it can be rolled again)</span></p>
+				<p class=i-text><span style='color:#e65c00;'>• After rolling the player whose turn it is, is displayed to the left of the dice</span></p>
+				<p class=i-text><span style='color:#586ba4;'>• Drag the player's counter with the mouse, the coresponding number of spaces</span></p>
+				<p class=i-text><span style='color:#ff4d4d;'>• You can now click on any of the question marks to reveal a question</span></p>
+				<p class=i-text><span style='color:#65cd99;'>• Once the question box has been closed, it can not be opened until the dice is rolled again</span></p>
+			</div>
 		</div>
 	</div>
 	
@@ -94,6 +101,7 @@
 					<img id='dice'src='images/game/6.png'>
 					<button onclick='rollDice()' id=dice-btn  class='working'>Roll Dice</button>
 				</div>
+				<div onclick='instructions()' id='info'>i</div>
 			</div>
 			<div class='full-row'>
 				<div class='square'></div>

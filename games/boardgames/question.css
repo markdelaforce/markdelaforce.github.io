@@ -61,3 +61,21 @@
 	cursor:default;
 	color:#666;
 }
+
+#instructions {
+	position:absolute;
+	width:100%;
+	height:100%;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:space-evenly;
+	visibility:hidden;
+}
+.i-text {
+	width:80%;
+	text-align:center;
+	font-family:'Comic Neue';
+	font-size:2vw;
+	cursor:default;
+}
