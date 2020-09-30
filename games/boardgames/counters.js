@@ -16,6 +16,16 @@ case 'Food':
 	pathToImages += 'food/';
 	playerPieces =	['apple', 'banana', 'carrot', 'cheese', 'egg',  'juice', 'pepper', 'sausage'];
 	break;
+	
+case 'Space':
+	pathToImages += 'space/';
+	playerPieces =	['alien', 'astronaut', 'comet', 'earth', 'moon',  'planet', 'rocket', 'ufo'];
+	break;
+	
+case 'Sport':
+	pathToImages += 'sport/';
+	playerPieces =	['baseball', 'basketball', 'bowling ball', 'cricket ball', 'football', 'golf ball', 'pool ball', 'tennis ball'];
+	break;
 }
 
 images.forEach((image, index) => {

@@ -21,14 +21,14 @@ switch (theme) {
 case 'Food':
 	variable_images = [
 		'food/apple', 'food/banana', 'food/carrot', 'food/cheese', 'food/egg', 'food/juice', 'food/pepper', 'food/sausage'
-	],
+	];
 	variable_descriptions = [
 		'apple (modified)', 'banana', 'carrot', 'cheese', 'egg', 'juice', 'pepper', 'sausage'
-	],
+	];
 	variable_sites = [
 		'needpix.com', 'freestockphotos.biz', 'pixabay.com', 'publicdomainvectors.org', 'freestockphotos.biz',
 		'publicdomainvectors.org', 'publicdomainvectors.org', 'publicdomainfiles.com'
-	],
+	];
 	variable_hrefs = [
 		'https://www.needpix.com/photo/download/1553313/clipart-clipart-illustration-graphic-cartoon-food-tasty-delicious-edible',
 		'http://www.freestockphotos.biz/stockphoto/15912',
@@ -39,6 +39,54 @@ case 'Food':
 		'https://publicdomainvectors.org/en/free-clipart/Red-bell-pepper/66124.html',
 		'http://www.publicdomainfiles.com/show_file.php?id=13938258622103'
 	];
+	break;
+	
+case 'Space':
+	variable_images = [
+		'space/alien', 'space/astronaut', 'space/comet', 'space/earth', 'space/moon', 'space/planet', 'space/rocket', 'space/ufo'
+	];
+	variable_descriptions = [
+		'alien', 'astronaut (modified)', 'comet', 'earth', 'moon', 'planet', 'rocket', 'ufo'
+	];
+	variable_sites = [
+		'pixabay.com', 'freesvg.org', 'freesvg.org', 'pixabay.com',
+		'needpix.com', 'freesvg.org', 'freesvg.org', 'freesvg.com'
+	];
+	variable_hrefs = [
+		'https://pixabay.com/es/vectors/extraterrestre-dibujos-animados-1295828/',
+		'https://freesvg.org/astronaut-in-space',
+		'https://freesvg.org/comet',
+		'https://pixabay.com/es/vectors/la-tierra-espacio-planeta-universo-1296078/',
+		'https://www.needpix.com/photo/28808/moon-craters-lunar-surface-sphere-satellite-cartoon',
+		'https://freesvg.org/saturn-planet',
+		'https://freesvg.org/cartoon-moon-rocket-vector-clip-art',
+		'https://freesvg.org/colored-ufo-vector-clip-art'
+	];
+	break;
+	
+case 'Sport':
+	variable_images = [
+		'sport/baseball', 'sport/basketball', 'sport/bowling ball', 'sport/cricket ball', 'sport/football', 'sport/golf ball', 'sport/pool ball', 'sport/tennis ball'
+	];
+	variable_descriptions = [
+		'baseball', 'basketball', 'bowling ball', 'cricket ball', 'football', 'golf ball', 'pool ball', 'tennis ball'
+	];
+	variable_sites = [
+		'pixy.org', 'pixy.org', 'pixy.org', 'pixy.org',
+		'pixy.org', 'pixy.org', 'pixy.org', 'pixy.org'
+	];
+	variable_hrefs = [
+		'https://pixy.org/4157039/',
+		'https://pixy.org/4157039/',
+		'https://pixy.org/4157039/',
+		'https://pixy.org/4157039/',
+		'https://pixy.org/4157039/',
+		'https://pixy.org/4157039/',
+		'https://pixy.org/4157039/',
+		'https://pixy.org/4157039/'
+	];
+	break;
+	
 }
 variable_images.push('game/sound-wave');
 variable_descriptions.push('( sound ) dice roll');
