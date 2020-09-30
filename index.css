@@ -4,22 +4,23 @@
 }
 
 body {
-	background:#f2fdff;
+	background:#e9e3d2;
 	padding-bottom:30vh;
 }
 
 #header {
 	position:fixed;
-	z-index:1;
+	z-index:2;
 	height:12vw;
 	width:100vw;
 	color:#fff;
-	background:#4cadcc;
-	font-family:'Nanum Brush Script', 'Courier New', 'Trebuchet MS', 'Geneva';
+	background:#437069;
+	font-family:'Nanum Brush Script', sans-serif;
 	font-size:9vw;
 	line-height:140%;
 	text-align:center;
 	cursor:default;
+	top:0;
 }
 
 .side-pics {
@@ -39,14 +40,29 @@ body {
 #right-pics {
 	right:0px;
 }
-.kid-pic {
-	max-height:40%;
+#dices {
+	max-height:35%;
 	max-width:100%;
+}
+#roulette {
+	max-height:25%;
+	max-width:90%;
+}
+#lottery {
+	max-height:30%;
+	max-width:90%;
+}
+#hand {
+	max-height:30%;
+	max-width:90%;
+}
+#dices, #roulette, #lottery, #hand {
+	opacity:0.8;
 }
 
 #games-thumbs {
 	position:absolute;
-	top:12vw;
+	top:16vw;
 	left:18vw;
 	width:64vw;
 	display:flex;
@@ -57,50 +73,61 @@ body {
 	width:100%;
 	display:flex;
 	justify-content:space-between;
-	margin-top:5vw;
+	
 }
 
 .item {
 	height:13vw;
 	width:19vw;
-	border:0.3vw solid #f3cb4d;
+	border:0.3vw solid #7ba59e;
 	border-radius:15px;
 	background:#fff;
 	position:relative;
 	display:flex;
 	align-items:center;
 	justify-content:center;
+	overflow:hidden;
 }
 
 .in-use:hover {
 	cursor:pointer;
-	box-shadow:0 0 10px #f3cb4d;
+	box-shadow:0 0 20px #8f4553;
 }
-
-.inner-element {
-	position:relative;
-	width:100%;
-	height:100%;
-	display:flex;
-	align-items:center;
-	justify-content:center;
-	opacity:0.8;
+.item-pic {
+	opacity:0.9;
 }
-
-.background-pic {
-	position:absolute;
+.p84 {
+	height:84%;
+	width:84%;
+}
+.p90 {
 	height:90%;
 	width:90%;
-	top:5%;
-	left:5%;
-	opacity:0.1;
+}
+.p100 {
+	height:100%;
+	width:100%;
+}
+.symbol {
+	width:70%;
+	opacity:0.8;
+}
+.not-in-use:hover {
+	cursor:not-allowed;
+}
+.title-row {
+	width:100%;
+	display:flex;
+	justify-content:space-between;
+	margin-bottom:1vw;
 }
 
 .title {
 	z-index:1;
-	color:#cc336e;
-	font-size:2.9vw;
+	font-size:3vw;
 	text-align:center;
-	line-height:150%;
-	font-family:'Nanum Brush Script', 'Courier New', 'Trebuchet MS', 'Geneva';
+	line-height:120%;
+	font-family:'Nanum Brush Script', sans-serif;
+	width:19vw;
+	color:#f28b43;
 }

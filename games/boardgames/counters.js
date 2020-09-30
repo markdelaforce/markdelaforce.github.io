@@ -58,6 +58,7 @@ function choose(index) {
 		
 		players++;
 		if (players === 2) {
+			startBtn.classList.remove('not-ready');
 			startBtn.classList.add('ready-btn');
 		}
 	}
@@ -77,6 +78,7 @@ function remove(index) {
 	players--;
 	if (players === 1) {
 		startBtn.classList.remove('ready-btn');
+		startBtn.classList.add('not-ready');
 	}
 }
 

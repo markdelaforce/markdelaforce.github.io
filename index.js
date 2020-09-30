@@ -1,26 +1,34 @@
 var
 inUseItems = Array.from(document.getElementsByClassName('in-use')),
-innerElements = Array.from(document.getElementsByClassName('inner-element')),
-backgroundPics = Array.from(document.getElementsByClassName('background-pic')),
-titles = Array.from(document.getElementsByClassName('title'));
+itemPics = Array.from(document.getElementsByClassName('item-pic')),
+notInUseItems = Array.from(document.getElementsByClassName('not-in-use'));
 
-inUseItems.forEach((item, index) => {
+inUseItems.forEach(item => {
+	var
+	child = item.children[0],
+	size_1 = child.classList[1].substring(1),
+	size_2 = (Number (size_1) +2).toString();
 	item.addEventListener('mouseover', () => {
-		innerElements[index].style.opacity = '1';
-		titles[index].style.fontSize = '3vw';
-		backgroundPics[index].style.height = '92%';
-		backgroundPics[index].style.width = '92%';
-		backgroundPics[index].style.top = '4%';
-		backgroundPics[index].style.left = '4%';
+		child.style.height = `${size_2}%`;
+		child.style.width = `${size_2}%`;
+		child.style.opacity = '1';
 		
 	});
 	item.addEventListener('mouseout', () => {
-		innerElements[index].style.opacity = '0.8';
-		titles[index].style.fontSize = '2.9vw';
-		backgroundPics[index].style.height = '90%';
-		backgroundPics[index].style.width = '90%';
-		backgroundPics[index].style.top = '5%';
-		backgroundPics[index].style.left = '5%';
+		child.style.height = `${size_1}%`;
+		child.style.width = `${size_1}%`;
+		child.style.opacity = '0.9';
+	});
+});
+
+notInUseItems.forEach(item => {
+	var child = item.children[0];
+	item.addEventListener('mouseover', () => {
+		child.style.opacity = '0.5';
+		
+	});
+	item.addEventListener('mouseout', () => {
+		child.style.opacity = '0.8';
 	});
 });
 
