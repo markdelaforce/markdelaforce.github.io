@@ -11,7 +11,9 @@ leftStart,
 leftPosition,
 leftDecrease,
 leftLimit,
-topPosition = 3.5;
+topPosition = 3.5,
+secret_index = 0,
+allow_secret_typing = true;
 
 squares.forEach((square, index) => {
 	setBackground(square, index);
@@ -112,4 +114,60 @@ function placeCounter(counter) {
 		topPosition += 4;
 	}
 	counter.style.zIndex = counter_z--;
+}
+
+var
+secret_display = document.getElementById('secret'),
+secret_list = document.getElementById('secret-list');
+document.addEventListener('keyup', secretText);
+secret_display.addEventListener('click', closeSecretText),
+last_question = questions.length - 1;
+
+questions.forEach((question, i) => {
+	var entry = question.split('<br><br>');
+	entry.forEach((part, index) => {
+		var text = document.createElement('P');
+		text.innerHTML = part;
+		secret_list.appendChild(text);
+	});
+	if (i !== last_question) {
+		var line = document.createElement('P');
+		line.innerHTML = '---';
+		secret_list.appendChild(line);
+	}
+});
+
+function secretText(event) {
+	if (allow_secret_typing === true) {
+		if (event.keyCode === 83) {
+			secret_index = 1;
+		}
+		else if (event.keyCode === 69 && secret_index === 1) {
+			secret_index = 2;
+		}
+		else if (event.keyCode === 67 && secret_index === 2) {
+			secret_index = 3;
+		}
+		else if (event.keyCode === 82 && secret_index === 3) {
+			secret_index = 4;
+		}
+		else if (event.keyCode === 69 && secret_index === 4) {
+			secret_index = 5;
+		}
+		else if (event.keyCode === 84 && secret_index === 5) {
+			openSecretText();
+		}
+		else {
+			secret_index = 0;
+		}
+	}
+}
+function openSecretText() {
+	allow_secret_typing = false;
+	secret_display.style.display = 'flex';
+}
+
+function closeSecretText() {
+	secret_display.style.display = 'none';
+	allow_secret_typing = true;
 }

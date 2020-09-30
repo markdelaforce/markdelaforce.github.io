@@ -100,3 +100,25 @@ body {
 	max-width:4vw;
 	cursor:pointer;
 }
+
+#secret {
+	padding:1vw;
+	position:absolute;
+	width:80vw;
+	left:10vw;
+	top:0;
+	background:#fff;
+	z-index:5;
+	display:none;
+	flex-direction:column;
+	align-items:center;
+	border:1px dotted #000;
+	box-shadow:0 0 30px #fff;
+	font-size:1.8vw;
+	cursor:default;
+}
+#secret-list {
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
