@@ -74,7 +74,7 @@ case 'Space':
 case 'Sport':
 	var questions = [
 		'Which sports do you like to practice ?',
-		'Do you play in any sports teams',
+		'Do you play in any sports teams ?',
 		'Do you like to watch sports ? Which ones ?',
 		'Have you ever played crazy golf ?',
 		'Do you practice any snow sports ?',
@@ -107,4 +107,42 @@ case 'Sport':
 		'How many rings does the Olympic flag have ?'
 	];
 	break;
+	
+case 'Halloween':
+	var questions = [
+		'What is the date of Halloween ?',
+		'How do you celebrate Halloween ?',
+		'Do you like to go Treak-or-Treating ?',
+		'What wouldn\'t you like to get if you went Trick-or-Treating ?',
+		'What "Fancy dress costumes" do people wear at Halloween ?',
+		'Do you usually wear a "Fancy dress costume" at Halloween ?',
+		'Which is the best "Fancy dress costume" you remember seeing ?',
+		'Which is the worst "Fancy dress costume" you remember seeing ?',
+		'What is the difference between the words "Witch" and "Which" ?',
+		'How old is too old to go Trick-or-Treating ?',
+		'Which colours are associated with Halloween and why ?',
+		'Do you like watching scary movies ?',
+		'Do you know any Halloween games ?',
+		'What food would you eat at a Halloween party ?',
+		'Have you ever ridden a Ghost Train ?',
+		'Have you ever entered a Haunted House ?',
+		'Do you like to "play tricks" on people at Hallloween ?',
+		'Have you ever eaten Pumpkin ?',
+		'Do you decorate your house at Halloween ?',
+		'How many Halloween "monsters" can you think of ?',
+		'Do you believe in ghosts ?',
+		'What would you do if you saw a ghost ?',
+		'Do you make a Jack-o\'-Lantern at Halloween ?',
+		'Do you prefer friendly or scary Jack-o\'-Lanterns ? Why ?',
+		'What is the most scared you have ever been ?',
+		'Are you afraid of spiders ?',
+		'Have you ever seen a bat in "real life" ?',
+		'Do you know anything about the history of Halloween ?',
+		'Who would you like to "Haunt" if you could ?',
+		'Which Halloween monster would you like to be if you could ?',
+		'Would you like to live forever as a Vampire ?',
+		'Would you like to "cast spells" on people like a Witch ?'
+	];
+	break;
+	
 }

@@ -5,7 +5,7 @@ images = Array.from(document.getElementsByClassName('image')),
 texts = Array.from(document.getElementsByClassName('text')),
 selectedDisplay = document.getElementById('selected-display'),
 startBtn = document.getElementById('start-btn'),
-pathToImages = 'images/',
+pathToImages = `images/${theme.toLowerCase()}/`,
 playerPieces,
 selectedElements = [],
 selectedIndexes = [],
@@ -13,18 +13,19 @@ players = 0;
 
 switch (theme) {
 case 'Food':
-	pathToImages += 'food/';
 	playerPieces =	['apple', 'banana', 'carrot', 'cheese', 'egg',  'juice', 'pepper', 'sausage'];
 	break;
 	
 case 'Space':
-	pathToImages += 'space/';
 	playerPieces =	['alien', 'astronaut', 'comet', 'earth', 'moon',  'planet', 'rocket', 'ufo'];
 	break;
 	
 case 'Sport':
-	pathToImages += 'sport/';
 	playerPieces =	['baseball', 'basketball', 'bowling ball', 'cricket ball', 'football', 'golf ball', 'pool ball', 'tennis ball'];
+	break;
+	
+case 'Halloween':
+	playerPieces = ['black cat', 'cauldron', 'ghost', 'poison', 'pumpkin', 'tombstone', 'witch\'s hat', 'zombie hand'];
 	break;
 }
 

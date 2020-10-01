@@ -87,6 +87,29 @@ case 'Sport':
 	];
 	break;
 	
+case 'Halloween':
+	variable_images = [
+		'halloween/black cat', 'halloween/cauldron', 'halloween/ghost', 'halloween/poison', 'halloween/pumpkin', 'halloween/tombstone', 'halloween/witch\'s hat', 'halloween/zombie hand'
+	];
+	variable_descriptions = [
+		'black cat', 'cauldron', 'ghost', 'poison', 'pumpkin', 'tombstone', 'witch\'s hat', 'zombie hand'
+	];
+	variable_sites = [
+		'pixabay.com', 'pixabay.com', 'pixabay.com', 'pixabay.com',
+		'pixabay.com', 'pixabay.com', 'pixabay.com', 'pixabay.com'
+	];
+	variable_hrefs = [
+		'https://pixabay.com/illustrations/cat-halloween-silhouette-mieze-1775543/',
+		'https://pixabay.com/vectors/bubble-cauldron-green-magic-potion-2022390/',
+		'https://pixabay.com/vectors/ghosts-ghost-halloween-spooky-cute-1775548/',
+		'https://pixabay.com/vectors/poison-toxic-bottle-liquid-green-146494/',
+		'https://pixabay.com/vectors/pumpkin-jack-o-lantern-1293079/',
+		'https://pixabay.com/vectors/tombstone-rip-dead-death-funeral-159792/',
+		'https://pixabay.com/vectors/witch-hat-sorceress-stripes-purple-312352/',
+		'https://pixabay.com/vectors/cartoon-isolated-zombie-hand-green-5039153/'
+	];
+	break;
+	
 }
 variable_images.push('game/sound-wave');
 variable_descriptions.push('( sound ) dice roll');
