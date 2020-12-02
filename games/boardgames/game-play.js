@@ -2,7 +2,6 @@ var
 dice = 6,
 player = 0,
 allowRoll = true,
-allowQuestion = false,
 instructionsShowing = false,
 questionButtons = Array.from(document.getElementsByClassName('q-btn')),
 diceImg = document.getElementById('dice'),
@@ -46,12 +45,6 @@ function nextRoll(rollsLeft) {
 		}, 5000);
 	}
 	else {
-		if (rollsLeft === 1) {
-			allowQuestion = true;
-			questionButtons.forEach(button => {
-				button.classList.add('btn-in-use');
-			});
-		}
 		setTimeout ( () => {
 			let random = Math.floor(Math.random() * 5);
 			dice = ((dice + random) % 6) + 1;
@@ -62,22 +55,20 @@ function nextRoll(rollsLeft) {
 }
 
 function askQuestion(color) {
-	if (allowQuestion === true) {
-		if (qsIndexes.length === 0) {
-			addAllIndexes();
-		}
-		let
-		random = Math.floor(Math.random() * qsIndexes.length),
-		qIndex = qsIndexes.splice(random, 1)[0];
-		
-		qText.innerHTML = questions[qIndex];
-		question.style.visibility = 'visible';
-		question.style.zIndex = z_index+1;
-		question.style.background = color;
-		outer.style.visibility = 'visible';
-		outer.style.zIndex = z_index+2;
-		qNumber.innerHTML = qIndex+1;
+	if (qsIndexes.length === 0) {
+		addAllIndexes();
 	}
+	let
+	random = Math.floor(Math.random() * qsIndexes.length),
+	qIndex = qsIndexes.splice(random, 1)[0];
+	
+	qText.innerHTML = questions[qIndex];
+	question.style.visibility = 'visible';
+	question.style.zIndex = z_index+1;
+	question.style.background = color;
+	outer.style.visibility = 'visible';
+	outer.style.zIndex = z_index+2;
+	qNumber.innerHTML = qIndex+1;
 }
 
 function hide() {
@@ -91,10 +82,6 @@ function hide() {
 		instructionsShowing = false;
 	}
 	else {
-		allowQuestion = false;
-		questionButtons.forEach(button => {
-			button.classList.remove('btn-in-use');
-		});
 		qText.innerHTML = '';
 		qNumber.innerHTML = '';
 	}
