@@ -69,7 +69,7 @@ function remove(index) {
 	for (let i = 0; i < players; i++) {
 		let word = selectedElements[i].childNodes[0].src.split('/')[7].split('.')[0];
 		if (word.includes('%20')) {
-			word.replace('%20', ' ');
+			word = word.replace('%20', ' ');
 		}
 		if (word === playerPieces[index]) {
 			selectedDisplay.removeChild(selectedElements[i]);
