@@ -145,4 +145,41 @@ case 'Halloween':
 	];
 	break;
 	
+case 'Christmas':
+	var questions = [
+		'Where does Santa Claus live ?',
+		'On which day is Christmas day ?',
+		'Which colours are associated with Christmas ?',
+		'Do you know the history of Christmas ?',
+		'What foods do people eat at Christmas ?',
+		'Which is your favourite Chistmas food ?',
+		'Are there any Christmas foods you don\'t like ?',
+		'What was the original colour of Father Christmas ?',
+		'What activities do you like to do at Christmas time ?',
+		'Which was your best present last year ?',
+		'What do you want for Christmas this year ?',
+		'Do you know what presents you are getting this year ?',
+		'Have you ever gotten a present you didn\'t like ?',
+		'What time do you normally open your presents ?',
+		'Do you get presents for your pets ?',
+		'Do you have a photo of you with Santa Claus ?',
+		'Did you write a letter to Santa this year ?',
+		'When do you normally put your Christmas decorations up ?',
+		'Do you normally hang up a Christmas stocking ?',
+		'Do you normally write Christmas cards for friends and family ?',
+		'Which do you prefer, Santa Claus or the Three Wise Men ?',
+		'Do you prefer Christmas time or your Birthday ?',
+		'How many Christmas songs can you name ?',
+		'How many Christmas films can you name ?',		
+		'Do you normally travel at Christmas time ?',
+		'Do your relatives normally visit you at Christmas time ?',
+		'Do you normally have a Christmas Party ?',
+		'Did you do any Christmas activities at school this year ?',
+		'How long are you off school for Christmas ?',
+		'When was the last time you made a snowman ?',
+		'When was the last time you had a snowball fight ?',
+		'What were the best things that happened to you this year ?'
+	];
+	break;
+	
 }

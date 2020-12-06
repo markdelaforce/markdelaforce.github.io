@@ -27,6 +27,10 @@ case 'Sport':
 case 'Halloween':
 	playerPieces = ['black cat', 'cauldron', 'ghost', 'poison', 'pumpkin', 'tombstone', 'witch\'s hat', 'zombie hand'];
 	break;
+	
+case 'Christmas':
+	playerPieces = ['bauble', 'candy cane', 'xmas tree', 'gingerbread', 'present', 'santa', 'snowman', 'stocking'];
+	break;
 }
 
 images.forEach((image, index) => {

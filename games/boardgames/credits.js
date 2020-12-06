@@ -110,6 +110,29 @@ case 'Halloween':
 	];
 	break;
 	
+case 'Christmas':
+	variable_images = [
+		'christmas/bauble', 'christmas/candy cane', 'christmas/xmas tree', 'christmas/gingerbread', 'christmas/present', 'christmas/santa', 'christmas/snowman', 'christmas/stocking'
+	];
+	variable_descriptions = [
+		'bauble (modified)', 'candy cane', 'xmas tree (modified)', 'gingerbread', 'present', 'santa (modified)', 'snowman', 'stocking (modified)'
+	];
+	variable_sites = [
+		'pixabay.com', 'openclipart.org', 'pixabay.com', 'pixabay.com',
+		'pixabay.com', 'openclipart.org', 'pixabay.com', 'pixabay.com'
+	];
+	variable_hrefs = [
+		'https://pixabay.com/de/vectors/weihnachten-christbaumkugel-4715972/',
+		'https://openclipart.org/detail/189393/candy-cane',
+		'https://pixabay.com/nl/vectors/kerstmis-de-kerstboom-bell-sok-4644705/',
+		'https://pixabay.com/nl/illustrations/peperkoek-man-gember-kind-kerst-944521/',
+		'https://pixabay.com/de/vectors/box-blau-paket-farbband-geschenk-40178/',
+		'https://openclipart.org/detail/233802/simple-santa-claus-christmas-scene',
+		'https://pixabay.com/vectors/snow-snowman-winter-cold-hat-red-161423/',
+		'https://pixabay.com/de/illustrations/christmas-stocking-weihnachtskerze-3774075/'
+	];
+	break;
+	
 }
 variable_images.push('game/sound-wave');
 variable_descriptions.push('( sound ) dice roll');
