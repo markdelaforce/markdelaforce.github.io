@@ -13,7 +13,9 @@ leftDecrease,
 leftLimit,
 topPosition = 3.5,
 secret_index = 0,
-allow_secret_typing = true;
+allow_secret_typing = true,
+playerIndexes = [],
+playerScores = [];
 
 squares.forEach((square, index) => {
 	setBackground(square, index);
@@ -30,6 +32,8 @@ gameCounters.forEach((gameCounter, index) => {
 	placeCounter(counter);
 	gameBoard.appendChild(counter);
 	makeDraggable(counter);
+	playerIndexes.push(index);
+	playerScores.push(0);
 });
 
 function setBackground(square, index) {
