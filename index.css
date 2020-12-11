@@ -131,3 +131,11 @@ body {
 	width:19vw;
 	color:#f28b43;
 }
+
+.new {
+	position:absolute;
+	height:40%;
+	top:2.5%;
+	left:2.5%;
+	opacity:0.9;
+}
