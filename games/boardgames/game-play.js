@@ -16,11 +16,14 @@ closeBtn = document.getElementById('close'),
 rollSound = new Audio ('roll sound.mp3'),
 qsLength = questions.length,
 qsIndexes = [],
+qIndex,
 exactRoll = true,
 end_options = document.getElementById('end-options'),
 checkbox_1 = document.getElementById('checkbox-1'),
 checkbox_2 = document.getElementById('checkbox-2'),
-readyForOptions = false;
+readyForOptions = false,
+searchButton = document.getElementById('search-btn'),
+buttonShowing = false;
 
 diceBtn.onmouseover = () => {
 	if (readyForOptions === true) {
@@ -100,7 +103,8 @@ function askQuestion(color) {
 		addAllIndexes();
 	}
 	let
-	random = Math.floor(Math.random() * qsIndexes.length),
+	random = Math.floor(Math.random() * qsIndexes.length);
+	
 	qIndex = qsIndexes.splice(random, 1)[0];
 	
 	qText.innerHTML = questions[qIndex];
@@ -109,7 +113,16 @@ function askQuestion(color) {
 	question.style.background = color;
 	outer.style.visibility = 'visible';
 	outer.style.zIndex = z_index+2;
-	qNumber.innerHTML = qIndex+1;
+	qNumber.innerHTML = `${qIndex+1} / ${qsLength}`;
+	if (indexesForSearch.includes(qIndex)) {
+		searchButton.style.display = 'initial';
+		buttonShowing = true;
+	}
+}
+
+function searchAnswer() {
+	let searchIndex = indexesForSearch.indexOf(qIndex);
+	window.open(`https://www.google.com/?#q=${searchTerms[searchIndex]}`);
 }
 
 function hide() {
@@ -125,6 +138,11 @@ function hide() {
 	else {
 		qText.innerHTML = '';
 		qNumber.innerHTML = '';
+		
+		if (buttonShowing === true) {
+			searchButton.style.display = 'none';
+			buttonShowing = false;
+		}
 	}
 }
 

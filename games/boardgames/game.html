@@ -45,7 +45,10 @@
 		<div id='inner'>
 			<div id='close' onclick='hide()'>X</div>
 			<p id='q-text'></p>
-			<div id='q-number'></div>
+			<div id='bottom-bar'>
+				<div id='q-number'></div>
+				<div id='search-btn' onclick='searchAnswer()'>Search</div>
+			</div>
 			<div id ='instructions'>
 				<p class=i-text><span style='color:#4cadcc;'>• Roll the dice (there is a delay after rolling before it can be rolled again)</span></p>
 				<p class=i-text><span style='color:#e65c00;'>• After rolling the player whose turn it is, is displayed to the left of the dice</span></p>
@@ -163,6 +166,7 @@
 
 <script src='../draggable.js'></script>
 <script src='questions.js'></script>
+<script src='search.js'></script>
 <script src='set-board.js'></script>
 <script src='game-play.js'></script>
 
