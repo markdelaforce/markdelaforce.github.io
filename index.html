@@ -9,7 +9,21 @@
 </head>
 
 <body>
-	<h1 id='header'>ESL&ensp;Games&ensp;Online</h1>
+	
+	<div id='info'>
+		<div id=info-holder>
+			<div id='close-info' onclick='closeInfo()'>x</div>
+			<p id='info-header'></p>
+			<p id='info-text'></p>
+		</div>
+	</div>
+	
+	<div id='header-div'>
+		<h1 id='header'>ESL&ensp;Games&ensp;Online</h1>
+		<div class='top-info' id='about-info' onclick='aboutInfo()'>About</div>
+		<div class='top-info' id='contact-info' onclick='contactInfo()'>Contact</div>
+		<!--<div class='top-info' id='terms-info' onclick='termsInfo()'>Terms</div>-->
+	</div>
 	
 	<div class='side-pics' id='left-pics'>
 		<img src='images/dices.png' id='dices'>
@@ -85,5 +99,6 @@
 </body>
 
 <script src='index.js'></script>
+<script src='info.js'></script>
 
 </html>
