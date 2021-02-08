@@ -182,4 +182,51 @@ case 'Christmas':
 	];
 	break;
 	
+case 'Clothes':
+	var questions = [
+		'What are you wearing today ?',
+		'What did you wear yesterday ?',
+		'Which are your favourite clothes ?',
+		'When was the last time you dropped food on your clothes ?',
+		'Do you have a favourite style of clothes ?',
+		'How often you you go shopping for clothes ?',
+		'Do you like the latest fashions ?',
+		'What clothes are in fashion now ?',
+		'Are there any types of clothes you don\'t like ?',
+		'What clothes do people wear at the beach ?',
+		'What clothes do people wear in Winter ?',
+		'Have you ever worn ripped clothes ?',
+		'Do you buy clothes online ?',
+		'Have you ever bought clothes that you didn\'t wear ?',
+		'Have you ever bought clothes as a present for someone ?',
+		'Do you like getting clothes as a present ?',
+		'What is the best type of clothing to receive as a present ?',
+		'What is the worst type of clothing to receive as a present ?',
+		'What do you think about wearing leather and fur ?',
+		'What do you think about clothes from other countries ?',
+		'Do you prefer Summer or Winter clothes ?',
+		'Do you prefer sports clothes or smart clothes ?',
+		'Do you prefer velcro or laces on your shoes ?',
+		'Do you have a favourite clothes colour ?',
+		'Do you have a favourite shop for buying clothes ?',
+		'What is the oldest item of clothing you have ?',
+		'What is the newest item of clothing you have ?',
+		'Do you have a Christmas jumper ?',
+		'Do you have socks with pictures on them ?',
+		'Do you have a tracksuit ?',
+		'Do you have traditional clothes from your country ?',
+		'How many hats do you have ?',
+		'How many pairs of shoes do you have ?',
+		'Do you have many clothes you don\'t use ?',
+		'What item of clothing do you have most of ?',
+		'Do you recycle clothes ?',
+		'How many different types of footwear can you think of ?',
+		'Which clothes have buttons ?',
+		'Which clothes have zips ?',
+		'Which clothes have sleeves ?',
+		'Which clothes come in pairs ?',
+		'What is you shoe size ?'
+	];
+	break;
+	
 }

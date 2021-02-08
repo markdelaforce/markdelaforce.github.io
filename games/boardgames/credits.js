@@ -133,6 +133,28 @@ case 'Christmas':
 	];
 	break;
 	
+case 'Clothes':
+	variable_images = [
+		'clothes/red sock', 'clothes/orange sock', 'clothes/yellow sock', 'clothes/green sock', 'clothes/turquoise sock', 'clothes/blue sock', 'clothes/purple sock', 'clothes/pink sock'
+	];
+	variable_descriptions = [
+		'red sock (modified)', 'orange sock (modified)', 'yellow sock (modified)', 'green sock (modified)', 'turquoise sock (modified)', 'blue sock (modified)', 'purple sock (modified)', 'pink sock (modified)'
+	];
+	variable_sites = [
+		'pixabay.com', 'pixabay.com', 'pixabay.com', 'pixabay.com',
+		'pixabay.com', 'pixabay.com', 'pixabay.com', 'pixabay.com'
+	];
+	variable_hrefs = [
+		'https://pixabay.com/es/vectors/calcetines-prendas-de-vestir-24411/',
+		'https://pixabay.com/es/vectors/calcetines-prendas-de-vestir-24411/',
+		'https://pixabay.com/es/vectors/calcetines-prendas-de-vestir-24411/',
+		'https://pixabay.com/es/vectors/calcetines-prendas-de-vestir-24411/',
+		'https://pixabay.com/es/vectors/calcetines-prendas-de-vestir-24411/',
+		'https://pixabay.com/es/vectors/calcetines-prendas-de-vestir-24411/',
+		'https://pixabay.com/es/vectors/calcetines-prendas-de-vestir-24411/',
+		'https://pixabay.com/es/vectors/calcetines-prendas-de-vestir-24411/'
+	];
+	break;
 }
 variable_images.push('game/sound-wave');
 variable_descriptions.push('( sound ) dice roll');

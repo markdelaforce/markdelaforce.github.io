@@ -125,4 +125,18 @@ case 'Christmas':
 	];
 	break;
 	
+case 'Clothes':
+	indexesForSearch = [11,18,21,22,29,36,38,39];
+	searchTerms = [
+		'ripped clothes images',
+		'leather and fur coat',
+		'smart casual images',
+		'shoelaces images',
+		'tracksuit images',
+		'footwear images',
+		'zips images',
+		'sleeves images'
+	];
+	break;
+	
 }
