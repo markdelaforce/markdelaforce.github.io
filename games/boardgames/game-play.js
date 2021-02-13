@@ -26,7 +26,7 @@ playerImage.addEventListener('click', () => {
 	removeOrCancel = true;
 	removeDiv.style.display = 'flex';
 	removeDiv.style.zIndex = ++z_index;
-	document.getElementById('player-name').innerHTML = playerImage.src.split('/')[11].split('.')[0].replace('%20', ' ');
+	document.getElementById('player-name').innerHTML = playerImage.src.split('/')[7].split('.')[0].replace('%20', ' ');
 });
 
 function addAllIndexes() {
