@@ -108,6 +108,7 @@
 #player-image {
 	max-height:80%;
 	max-width:80%;
+	cursor:pointer;
 }
 
 #dice {

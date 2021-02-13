@@ -98,7 +98,7 @@ body {
 	position:absolute;
 	max-height:4vw;
 	max-width:4vw;
-	cursor:pointer;
+	cursor:grab;
 }
 
 #secret {

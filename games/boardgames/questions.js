@@ -189,7 +189,7 @@ case 'Clothes':
 		'Which are your favourite clothes ?',
 		'When was the last time you dropped food on your clothes ?',
 		'Do you have a favourite style of clothes ?',
-		'How often you you go shopping for clothes ?',
+		'How often do you go shopping for clothes ?',
 		'Do you like the latest fashions ?',
 		'What clothes are in fashion now ?',
 		'Are there any types of clothes you don\'t like ?',

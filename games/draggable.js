@@ -12,6 +12,7 @@ function makeDraggable(item) {
 		item.style.zIndex = z_index++;
 		document.onmousemove = dragItem;
 		document.onmouseup = releaseItem;
+		item.style.cursor = 'grabbing';
 	}
 
 	function dragItem(e) {
@@ -43,5 +44,6 @@ function makeDraggable(item) {
 		}
 		document.onmouseup = null;
 		document.onmousemove = null;
+		item.style.cursor = 'grab';
 	}
 }

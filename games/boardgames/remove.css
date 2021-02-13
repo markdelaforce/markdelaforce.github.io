@@ -1,0 +1,52 @@
+#remove {
+	position:absolute;
+	width:30vw;
+	height:17vw;
+	background:#f3f3f3;
+	border:2px solid #665200;
+	border-radius:15px;
+	box-shadow:0 0 50px #fff;
+	top:29%;
+	left:20%;
+	display:none;
+	flex-direction:column;
+	align-items:center;
+	justify-content:space-evenly;
+}
+
+#remove-text {
+	width:90%;
+	text-align:center;
+	font-family:'Comic Neue';
+	font-size:2.2vw;
+	color:#766210;
+}
+
+#player-name {
+	font-size:2.4vw;
+	color:#000;
+}
+
+#remove-buttons {
+	width:100%;
+	display:flex;
+	justify-content:space-evenly;
+}
+
+.rmv-btn {
+	position:relative;
+	width:8vw;
+	height:3vw;
+	font-family:'Comic Neue';
+	font-size:1.8vw;
+	cursor:pointer;
+	border:2px solid #333;
+	border-radius:15px;
+	box-shadow:2px 2px 4px #555;
+	background:#b38f00;
+}
+.rmv-btn:hover {
+	box-shadow:none;
+	top:1px;
+	left:1px;
+}

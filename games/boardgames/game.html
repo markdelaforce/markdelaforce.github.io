@@ -7,36 +7,11 @@
 	<link rel='stylesheet' type='text/css' href='board.css'>
 	<link rel='stylesheet' type='text/css' href='buttons.css'>
 	<link rel='stylesheet' type='text/css' href='question.css'>
-	<link rel='stylesheet' type='text/css' href='end options.css'>
+	<link rel='stylesheet' type='text/css' href='remove.css'>
 	<link href="https://fonts.googleapis.com/css?family=Caveat|Comic+Neue|Freckle+Face|Spicy Rice" rel="stylesheet">
 </head>
 
 <body>
-	<div id='end-options'>
-		<div id='close-options' onclick='closeOptions()'>x</div>
-		<p id='instruction-text'>choose&ensp;an&ensp;option</p>
-		<div class='option'>
-			<div class='img-and-text'>
-				<img id='player-img-1'>
-				<img class='option-img' src='images/game/option 1.png'>
-				<p class='option-text'>Exact dice roll needed to finish</p>
-			</div>
-			<div class='selection-div'>
-				<img id='checkbox-1' src='images/game/checked.png'>
-			</div>
-		</div>
-		<div class='option'>
-			<div class='img-and-text'>
-				<img id='player-img-2'>
-				<img class='option-img' src='images/game/option 2.png'>
-				<p class='option-text'>Minimum dice roll or higher to finish</p>
-			</div>
-			<div class='selection-div'>
-				<img id='checkbox-2' src='images/game/unchecked.png'>
-			</div>
-		</div>
-		<p id='note'>* applies to all players</p>
-	</div>
 	
 	<div id='question'>
 	</div>
@@ -54,11 +29,20 @@
 				<p class=i-text><span style='color:#e65c00;'>• After rolling the player whose turn it is, is displayed to the left of the dice</span></p>
 				<p class=i-text><span style='color:#586ba4;'>• Drag the player's counter with the mouse, the corresponding number of spaces</span></p>
 				<p class=i-text><span style='color:#ff4d4d;'>• Click on a question mark to reveal a question</span></p>
+				<p class=i-text><span style='color:#88d8b0;'>• To remove a player from dice rolls after they finish, click player's icon to the left of the dice</span></p>
 			</div>
 		</div>
 	</div>
 	
 	<div id='game-board'>
+		<div id='remove'>
+			<p id='remove-text'>Remove <span id='player-name'></span> from dice rolls ?</p>
+			<div id='remove-buttons'>
+				<button class='rmv-btn' onclick='removePlayer()'>remove</button>
+				<button class='rmv-btn' onclick='clearRemove()'>cancel</button>
+			</div>
+		</div>
+		
 		<div>
 			<div class='full-row'>
 				<div class='square'></div>
