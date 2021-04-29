@@ -155,6 +155,30 @@ case 'Clothes':
 		'https://pixabay.com/es/vectors/calcetines-prendas-de-vestir-24411/'
 	];
 	break;
+	
+case 'Animals':
+	variable_images = [
+		'animals/bee', 'animals/cow', 'animals/dog', 'animals/fish', 'animals/frog', 'animals/panda', 'animals/penguin', 'animals/seal'
+	];
+	variable_descriptions = [
+		'bee', 'cow', 'dog', 'fish (modified)', 'frog (modified)', 'panda (modified)', 'penguin (modified)', 'seal'
+	];
+	variable_sites = [
+		'pixabay.com', 'pixabay.com', 'pixabay.com', 'pixabay.com',
+		'pixabay.com', 'pixabay.com', 'pixabay.com', 'pixabay.com'
+	];
+	variable_hrefs = [
+		'https://pixabay.com/de/vectors/honig-biene-fliegen-insekt-311047/',
+		'https://pixabay.com/de/vectors/kuh-gras-essen-tier-159893/',
+		'https://pixabay.com/de/vectors/hund-tiere-terrier-häuslich-humor-47957/',
+		'https://pixabay.com/de/vectors/goldfisch-fisch-koi-karpfen-30837/',
+		'https://pixabay.com/de/vectors/cartoon-frog-lustig-amphibien-2479796/',
+		'https://pixabay.com/de/vectors/panda-bär-niedlich-baby-tier-312197/',
+		'https://pixabay.com/de/vectors/tier-niedlich-pinguin-tux-160760/',
+		'https://pixabay.com/de/vectors/siegel-tiere-aquarium-zirkus-meer-161264/'
+	];
+	break;
+	
 }
 variable_images.push('game/sound-wave');
 variable_descriptions.push('( sound ) dice roll');

@@ -139,4 +139,24 @@ case 'Clothes':
 	];
 	break;
 	
+case 'Animals':
+	indexesForSearch =[12,13,14,15,16,17,18,19,20,21,22,23,24,25];
+	searchTerms = [
+		'endangered species',
+		'how many animal species',
+		'fastest land animal',
+		'fastest bird',
+		'fastest animal in water kph',
+		'heaviest living animal',
+		'animal with most teeth',
+		'animal with most powerful bite',
+		'most venomous animals',
+		'longest living animal',
+		'oldest animal species',
+		'longest living tortoise',
+		'most dangerous animals',
+		'continent with most animal species'
+	];
+	break;
+	
 }

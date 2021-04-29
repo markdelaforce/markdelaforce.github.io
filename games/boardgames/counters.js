@@ -35,6 +35,11 @@ case 'Christmas':
 case 'Clothes':
 	playerPieces = ['red sock', 'orange sock', 'yellow sock', 'green sock', 'turquoise sock', 'blue sock', 'purple sock', 'pink sock'];
 	break;
+	
+case 'Animals':
+	playerPieces = ['bee', 'cow', 'dog', 'fish', 'frog', 'panda', 'penguin', 'seal'];
+	break;
+	
 }
 
 images.forEach((image, index) => {

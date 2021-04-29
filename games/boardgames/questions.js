@@ -229,4 +229,49 @@ case 'Clothes':
 	];
 	break;
 	
+case 'Animals':
+	var questions = [
+		'Which is your favourite animal and why ?',
+		'Have you seen your favourite animal in real life ?',
+		'Are there any animals you are scared of ?',
+		'Are there any animals that disgust you ?',
+		'Do you have any pets ?',
+		'What was the name of your first pet ?',
+		'Do you have any friends who have unusual pets ?',
+		'When was the last time you visited a pet shop ?',
+		'How many animals can you name in 30 seconds ?',
+		'Can you name ten mammals ?',
+		'Can you name three birds ?',
+		'Can you name three reptiles ?',
+		'Can you name any animals in danger of extinction ?',
+		'How many animal species are there ?',
+		'Which is the fastest land animal ?',
+		'Which is the fastest bird ?',
+		'Which the fastest animal in water ?',
+		'Which is the heaviest living animal ?',
+		'Which animal has the most teeth ?',
+		'Which animal has the most powerful bite ?',
+		'Which animal is the most venomous ?',
+		'Which is the longest living animal ?',
+		'Which animal has lived on earth for the longest time ?',
+		'How many years did the oldest tortoise live for ?',
+		'Which are the most dangerous animals ?',
+		'Which continent has the most animals ?',
+		'What are some common animals that live in your country ?',
+		'In which different habitats do animals live ?',
+		'Have you ever taught a dog any tricks ?',
+		'Have you ever been attacked by an animal ?',
+		'Have you ever ridden a horse ?',
+		'Have you ever visited a zoo ?',
+		'Have you ever been bird watching ?',
+		'Have you ever seen animals racing ?',
+		'Do you like eating fish ?',
+		'Can you do any animal impressions ?',
+		'If you could be any animal for a day, which would you be ?',
+		'If you could talk with animals, what would you ask them ?',
+		'Do you think that annimals dream ?',
+		'Should animals be kept in zoos ?'
+	];
+	break;
+	
 }
