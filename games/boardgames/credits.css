@@ -54,6 +54,7 @@
 .image {
 	max-height:80%;
 	max-width:80%;
+	transform:translateZ(0);
 }
 
 .link {
