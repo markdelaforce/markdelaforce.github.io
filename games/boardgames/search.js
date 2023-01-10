@@ -4,10 +4,11 @@ searchTerms;
 
 switch (sessionStorage.theme) {
 case 'Food':
-	indexesForSearch = [8,9,10,11,12,14,19,20,27,28,29,30,31];
+	indexesForSearch = [8,9,10,11,12,15,17,23,24,31,32,33,34,35];
 	searchTerms = [
 		'chinese food images',
 		'indian food images',
+		'mexican food images',
 		'italian food images',
 		'fruits and vegetables',
 		'desserts images',
@@ -23,7 +24,7 @@ case 'Food':
 	break;
 	
 case 'Space':
-	indexesForSearch = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29];
+	indexesForSearch = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31];
 	searchTerms = [
 		'compare speed of light and sound',
 		'time to reach light from sun to earth',
@@ -31,7 +32,6 @@ case 'Space':
 		'how many people have walked on the moon',
 		'first satellite in space',
 		'is the sun a star',
-		'closest planet to the sun',
 		'biggest planet in the solar system',
 		'second biggest planet in the solar system',
 		'planets in order from the sun',
@@ -54,12 +54,15 @@ case 'Space':
 		'number of planets in the solar system',
 		'rings of saturn',
 		'when was pluto discovered',
-		'how many earths can fit in the sun'
+		'how many earths can fit in the sun',
+		'earth\'s sister planet',
+		'how many gas giants',
+		'first chimpanzee in space'
 	];
 	break;
 	
 case 'Sport':
-	indexesForSearch = [3,4,8,9,10,11,17,18,19,20,22,23,24,25,26,27,28,29,30];
+	indexesForSearch = [3,4,8,9,10,11,17,18,19,20,22,23,24,25,26,27,28,29,30,31];
 	searchTerms = [
 		'crazy golf images',
 		'snow sports',
@@ -85,7 +88,7 @@ case 'Sport':
 	break;
 	
 case 'Halloween':
-	indexesForSearch = [0,4,5,6,7,10,11,12,13,14,15,19,22,23,26,27,28,31];
+	indexesForSearch = [0,4,5,6,7,10,11,12,13,14,15,19,22,23,26,27,28,31,33];
 	searchTerms = [
 		'date of halloween',
 		'halloween costumes images',
@@ -104,12 +107,13 @@ case 'Halloween':
 		'bat animal',
 		'history of halloween for kids',
 		'haunt wordreference translation',
-		'casting spell clipart'
+		'casting spell clipart',
+		'which animal is a witch\'s best friend'
 	];
 	break;
 	
 case 'Christmas':
-	indexesForSearch = [0,1,2,3,7,18,20,22,23,25,30];
+	indexesForSearch = [0,1,2,3,7,18,20,22,23,25,30,32];
 	searchTerms = [
 		'where does santa live',
 		'christmas day',
@@ -121,7 +125,8 @@ case 'Christmas':
 		'christmas songs for kids',
 		'christmas films for kids',
 		'relative wordreference translation',
-		'snowball fight images'
+		'snowball fight images',
+		'names of santa\'s reindeer'
 	];
 	break;
 	

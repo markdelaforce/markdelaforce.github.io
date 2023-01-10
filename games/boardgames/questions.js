@@ -11,14 +11,18 @@ case 'Food':
 		'What will you have for dinner today ?',
 		'Have you ever tried Chinese food ?',
 		'Have you ever tried Indian food ?',
+		'Have you ever tried Mexican food ?',
 		'Do you like Italian food ?',
 		'Do you like fruits and vegetables ?',
+		'Do you like trying new foods ?',
+		'Do you have any food allergies ?',
 		'Which are your favourite desserts ?',
 		'Which are your favourite drinks ?',
 		'Which is your favourite meat ?',
 		'Which is your favourite ice-cream flavour ?',
 		'How often do you eat Take-away food ?',
 		'How often do you eat at a restaurant ?',
+		'Which are your favourite restaurants ?',
 		'Are there any foods you hate ?',
 		'How many healthy foods can you think of ?',
 		'How many unhealthy foods can you think of ?',
@@ -26,9 +30,9 @@ case 'Food':
 		'How many hamburger ingredients can you think of ?',
 		'How many vegetables can you name ?',
 		'How many fruits can you name ?',
-		'What foods do you eat at a Birthday party ?',
-		'What foods do you eat at Christmas ?',
-		'What foods do you eat at the cinema ?',
+		'What foods do people eat at Birthday parties ?',
+		'What foods do people eat at Christmas time ?',
+		'What foods do people eat at the cinema ?',
 		'What is cheese made of ?',
 		'What is yoghurt made of ?',
 		'Where do apples grow ?',
@@ -44,7 +48,6 @@ case 'Space':
 		'How many people have walked on the moon ?<br><br>six - twelve - eighteen',
 		'When was the first satellite launched into space ?<br><br>1947 - 1957 - 1967',
 		'The Sun is a star. True or false ?',
-		'Name the planet closest to the Sun.<br><br>Earth - Mercury - Mars',
 		'Name the biggest planet in our Solar System.',
 		'Which is the second biggest planet in the Solar System',
 		'Which is the closest planet to the Sun ?<br><br>Venus - Mercury - Mars',
@@ -65,9 +68,12 @@ case 'Space':
 		'What is the distance from the Earth to the Sun ?<br><br>50 million km - 100 million km - 150 million km',
 		'Which is the fifth planet from the Sun ?<br><br>Jupiter - Saturn - Neptune',
 		'How many planets are in our Solar System ?',
-		'What are the rings around Saturn made of ?<br><br>Gas - Ice and Rock - Gold and Silver',
+		'What are the rings around Saturn made of ?<br><br>Ice and Rock - Gas - Gold and Silver',
 		'When was Pluto discovered ?<br><br>1870 - 1900 - 1930',
-		'How many Earths could fit inside the Sun ?<br><br>1 million - 10 million - 100 million'
+		'How many Earths could fit inside the Sun ?<br><br>1 million - 10 million - 100 million',
+		'Which planet is sometimes called Earth\'s sister Planet ?<br><br>Venus - Mars - Mercury',
+		'How many planets in the solar system are made of gas ?<br><br>Two - Three - Four',
+		'In which year was the first chimpanzee sent into space ?<br><br>1959 - 1960 - 1961'
 	];
 	break;
 	
@@ -85,7 +91,7 @@ case 'Sport':
 		'Which do you think are the most popular sports in your country ?',
 		'Which sports are the most dangerous ?',
 		'Which sports are the most expensive to do ?',
-		'Who is your favourite sports person ? Why ?',
+		'Who is your favourite sportsperson ? Why ?',
 		'Which new sports would you like to try ?',
 		'Are there any sports that you don\'t like ?',
 		'How often do you watch sports on TV ?',
@@ -104,7 +110,11 @@ case 'Sport':
 		'Which athlete has won most medals in the Olympic games ?',
 		'Which player has won most titles in Tennis ?',
 		'Who is the only player allowed to touch the ball with their hands in football ?',
-		'How many rings does the Olympic flag have ?'
+		'How many rings does the Olympic flag have ?',
+		'Have you ever competed in any sports competitions ?',
+		'Which sportspeople would you like to meet ?',
+		'Who are the most famous sportspeople in your country ?',
+		'Have you ever played tennis ?'
 	];
 	break;
 	
@@ -123,7 +133,7 @@ case 'Halloween':
 		'Which colours are associated with Halloween and why ?',
 		'Do you like watching scary movies ?',
 		'Do you know any Halloween games ?',
-		'What food would you eat at a Halloween party ?',
+		'What food do people eat at a Halloween party ?',
 		'Have you ever ridden a Ghost Train ?',
 		'Have you ever entered a Haunted House ?',
 		'Do you like to "play tricks" on people at Halloween ?',
@@ -141,7 +151,9 @@ case 'Halloween':
 		'Who would you like to "Haunt" if you could ?',
 		'Which Halloween monster would you like to be if you could ?',
 		'Would you like to live forever as a Vampire ?',
-		'Would you like to "cast spells" on people like a Witch ?'
+		'Would you like to "cast spells" on people like a Witch ?',
+		'Do you do any activities at school for Halloween ?',
+		'Which animal is a witch\'s best friend ?'
 	];
 	break;
 	
@@ -178,7 +190,8 @@ case 'Christmas':
 		'How long are you off school for Christmas ?',
 		'When was the last time you made a snowman ?',
 		'When was the last time you had a snowball fight ?',
-		'What were the best things that happened to you this year ?'
+		'What were the best things that happened to you this year ?',
+		'How many of Santa\'s reindeer do you know the names of ?'
 	];
 	break;
 	
@@ -269,7 +282,7 @@ case 'Animals':
 		'Can you do any animal impressions ?',
 		'If you could be any animal for a day, which would you be ?',
 		'If you could talk with animals, what would you ask them ?',
-		'Do you think that annimals dream ?',
+		'Do you think that animals dream ?',
 		'Should animals be kept in zoos ?'
 	];
 	break;
