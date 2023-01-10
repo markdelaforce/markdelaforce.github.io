@@ -80,8 +80,9 @@ function choose(index) {
 
 function remove(index) {
 	for (let i = 0; i < players; i++) {
-		let word = selectedElements[i].childNodes[0].src.split('/')[7].split('.')[0];
-		if (word.includes('%20')) {
+		lastIndex = selectedElements[i].childNodes[0].src.split('/').length-1;
+		word = selectedElements[i].childNodes[0].src.split('/')[lastIndex].split('.')[0];
+		while (word.includes('%20')) {
 			word = word.replace('%20', ' ');
 		}
 		if (word === playerPieces[index]) {
