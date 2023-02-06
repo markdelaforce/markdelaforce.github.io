@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<!--<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+	<title>sentence maker</title>
+	<link rel='stylesheet' type='text/css' href='sentence maker.css'>
+</head>
+
+<body>
+	<div id='top'>
+		<div id='wheel-container'>
+			<div id='wheel'>
+				<div class='segment' style='--i:1; --clr:#db7093;'><span></span></div>
+				<div class='segment' style='--i:2; --clr:#20b2aa;'><span></span></div>
+				<div class='segment' style='--i:3; --clr:#d63e92;'><span></span></div>
+				<div class='segment' style='--i:4; --clr:#6153CC;'><span></span></div>
+				<div class='segment' style='--i:5; --clr:#ff7c4d;'><span></span></div>
+				<div class='segment' style='--i:6; --clr:#3cb371;'><span></span></div>
+				<div class='segment' style='--i:7; --clr:#daa520;'><span></span></div>
+				<div class='segment' style='--i:8; --clr:#5BC0EB;'><span></span></div>
+				<div class='segment' style='--i:9; --clr:#ff5233;'><span></span></div>
+				<div class='segment' style='--i:10; --clr:#4169e1;'><span></span></div>
+				<div class='segment' style='--i:11; --clr:#db7093;'><span></span></div>
+				<div class='segment' style='--i:12; --clr:#20b2aa;'><span></span></div>
+				<div class='segment' style='--i:13; --clr:#d63e92;'><span></span></div>
+				<div class='segment' style='--i:14; --clr:#6153CC;'><span></span></div>
+				<div class='segment' style='--i:15; --clr:#ff7c4d;'><span></span></div>
+				<div class='segment' style='--i:16; --clr:#3cb371;'><span></span></div>
+				<div class='segment' style='--i:17; --clr:#daa520;'><span></span></div>
+				<div class='segment' style='--i:18; --clr:#5BC0EB;'><span></span></div>
+				<div class='segment' style='--i:19; --clr:#ff5233;'><span></span></div>
+				<div class='segment' style='--i:20; --clr:#4169e1;'><span></span></div>
+			</div>
+			<div id='center'></div>
+			
+			<div id='shuffle-holder' onclick='selectVerbs()'>
+				<img id='shuffle-image' src='shuffle.png'>
+			</div>
+		</div>
+	
+		<div id='display-container'>
+			<div class='display-row'>
+				<div class='display' id='time'>
+					<div id='time-inner'>
+						<div class='time-div'>
+							<p class='text'>Present</p>
+						</div>
+						<div class='time-div'>
+							<p class='text'>Future</p>
+						</div>
+						<div class='time-div'>
+							<p class='text'>Past</p>
+						</div>
+					</div>
+				</div>
+				<div class='check-boxes'>
+					<div class='check-box'>
+						<input type="checkbox" class='check' onchange="toggleTime('Past')" id='Past' checked>
+						<label for="Past">past</label>
+					</div>
+					<div class='check-box'>
+						<input type="checkbox" class='check' onchange="toggleTime('Present')" id='Present' checked>
+						<label for="Present">present</label>
+					</div>
+					<div class='check-box'>
+						<input type="checkbox" class='check' onchange="toggleTime('Future')" id='Future' checked>
+						<label for="Future">future</label>
+					</div>
+				</div>
+			</div>
+		
+			<div class='display-row'>
+				<div class='display' id='form'>
+					<div id='form-inner'>
+						<div class='form-div'>
+							<p class='text'>Affirmative</p>
+						</div>
+						<div class='form-div'>
+							<p class='text'>Negative</p>
+						</div>
+						<div class='form-div'>
+							<p class='text'>Question</p>
+						</div>
+					</div>
+				</div>
+				<div class='check-boxes'>
+					<div class='check-box'>
+						<input type="checkbox" class='check' onchange="toggleForm('Affirmative')" id='Affirmative' checked>
+						<label for="Affirmative">affirmative</label>
+					</div>
+					<div class='check-box'>
+						<input type="checkbox" class='check' onchange="toggleForm('Negative')" id='Negative' checked>
+						<label for="Negative">negative</label>
+					</div>
+					<div class='check-box'>
+						<input type="checkbox" class='check' onchange="toggleForm('Question')" id='Question' checked>
+						<label for="Question">question</label>
+					</div>
+				</div>
+			</div>
+		
+			<div class='display-row'>
+				<div id='spin-btn'>SPIN&ensp;&ensp;WHEEL</div>
+			</div>
+		
+			<div class='display-row'>
+				<div id='help-btn'>ANSWER</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id='bottom'>
+		<div id='sentence'></div>
+	</div>
+	
+	<script src='sentence maker.js'></script>
+</body>
+
+</html>

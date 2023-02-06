@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,800,900&display=swap');
+
+* {
+	margin:0;
+	box-sizing:border-box;
+	font-family:'Poppins', sans-serif;
+	
+	/*background:rgba(0,255,0,0.1);*/
+}
+
+body {
+	display:flex;
+	flex-direction:column;
+	background:#DBD4D3;
+	height:100vh;
+	justify-content:center;
+}
+#top {
+	display:flex;
+	justify-content:space-evenly;
+	align-items:center;
+	width:100vw;
+	padding:0 1vw 0 3.5vw;
+	margin-bottom:2vw;
+}
+
+#wheel-container {
+	position:relative;
+	width:32vw;
+	height:32vw;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	transform:rotate(117deg);
+}
+#display-container {
+	position:relative;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-around;
+	height:32vw;
+	width:35vw;
+}
+.display-row {
+	position:relative;
+	display:flex;
+	justify-content:center;
+	width:100%;
+}
+
+#wheel {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	border-radius:50%;
+	overflow:hidden;
+	transition:transform 40ms;
+	box-shadow:0 0 4px #999;
+}
+.segment {
+	position:absolute;
+	width:50%;
+	height:50%;
+	background:var(--clr);
+	transform-origin:bottom right;
+	transform:rotate(calc(18deg * var(--i)));
+	-webkit-clip-path:polygon(0 0, 27.5% 0, 100% 100%, 0 27.5%);
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	cursor:default;
+	-webkit-user-select:none;
+}
+.segment span {
+	position:relative;
+	transform:rotate(-135deg);
+	font-size:1.5vw;
+	font-weight:500;
+	color:#fff;
+	text-shadow:2px 2px 2px rgba(0,0,0,0.45);
+	padding-right:0.5vw;
+}
+#center {
+	position:absolute;
+	width:3vw;
+	height:3vw;
+	background:#fff;
+	border-radius:50%;
+	z-index:1;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-weight:600;
+	color:#333;
+	border:0.2vw solid #DBD4D3;
+	cursor:default;
+	transform:rotate(-27deg);
+}
+#center::before {
+	content:'';
+	position:absolute;
+	top:-1.45vw;
+	width:1vw;
+	height:1.5vw;
+	background:#fff;
+	-webkit-clip-path:polygon(50% 0%, 15% 100%, 85% 100%);
+}
+
+#shuffle-holder {
+	position:absolute;
+	right:7vw;
+	bottom:-3vw;
+	width:3vw;
+	height:3vw;
+	background:#fff;
+	transform-origin:bottom right;
+	transform:rotate(-117deg);
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	border:2px solid #000;
+	border-radius:50%;
+	background:#fff;
+	cursor:pointer;
+}
+#shuffle-image {
+	width:70%;
+}
+
+.display, #spin-btn, #help-btn {
+	width:80%;
+	height:5.4vw;
+	border-radius:10px;
+	box-shadow:2px 2px 5px #ccc;
+}
+
+.check-boxes {
+	position:absolute;
+	width:8vw;
+	height:100%;
+	right:-5vw;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+.check-box {
+	display:flex;
+	align-items:center;
+	margin:0.5vw 0;
+	font-size:1vw;
+}
+.check {
+	margin-right:0.5vw;
+}
+
+#time, #form {
+	position:relative;
+	font-size:1.9vw;
+	overflow:hidden;
+	background:#fff;
+	border:2px solid #3C787E;
+}
+#time-inner, #form-inner {
+	position:absolute;
+	top:1px;
+	width:100%;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+.time-div, .form-div {
+	position:relative;
+	width:50%;
+	transition:margin-top 0.35s linear;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	height:5.4vw;
+	margin-top:0;
+}
+.text {
+	width:100%;
+	text-align:center;
+}
+
+#spin-btn, #help-btn {
+	color:#fff;
+	cursor:pointer;
+	text-align:center;
+	font-size:3.4vw;
+	font-weight:500;
+	line-height:160%;
+	text-shadow:2px 2px 4px rgba(0,0,0,0.45);
+	-webkit-user-select:none;
+	transition:font-size 0.1s, line-height 0.1s, background 0.1s;
+}
+#spin-btn {
+	background:#FFD639;
+}
+#help-btn {
+	background:#389436;
+}
+#spin-btn:hover, #help-btn:hover {
+	font-size:3.5vw;
+	line-height:156%;
+}
+#spin-btn:hover {
+	background:#ffdb4d;
+}
+#help-btn:hover {
+	background:#3DA53B;
+}
+
+#bottom {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width:100vw;
+	position:relative;
+	margin-top:1vw;
+}
+#sentence {
+	width:73%;
+	height:5.4vw;
+	background:#fff;
+	border-radius:10px;
+	box-shadow:2px 2px 5px #ccc;
+	border:1px solid #F26419;
+	text-align:center;
+	font-size:2.5vw;
+	line-height:5.4vw;
+	color:#DA627D;
+}
