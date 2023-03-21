@@ -17,6 +17,12 @@
 	text-align:center;
 	font-size:1.7vw;
 }
+.phone {
+	color:#00f;
+}
+.phone, .small {
+	cursor:pointer;
+}
 #button, .button {
 	background:#3B60E4;
 	border:2px solid #000;
@@ -68,9 +74,8 @@
 	.text {
 		font-size:7vw;
 	}
-	.break {
-		width:55%;
-		overflow-wrap: break-word;
+	.small {
+		font-size:5.2vw;
 	}
 	#button, .button {
 		font-size:5.5vw;
