@@ -17,31 +17,56 @@
 	text-align:center;
 	font-size:1.7vw;
 }
-#button {
+#button, #left-button, #right-button {
 	padding:8px;
-	font-size:1.4vw;
 	background:#3B60E4;
 	border:2px solid #000;
 	border-radius:5px;
-	box-shadow:2px 2px 3px #999;
 	color:#fff;
+}
+#button {
+	box-shadow:2px 2px 3px #999;
+	font-size:1.4vw;
+}
+#buttons {
+	display:flex;
+}
+#left-button, #right-button {
+	font-size:2.4vw;
+}
+#left-button {
+	box-shadow:-2px 2px 3px #999;
+	transform:rotate(-90deg);
+}
+#right-button {
+	box-shadow:2px -2px 3px #999;
+	transform:rotate(90deg);
+}
+#button-spacer {
+	width:2vw;
 }
 #main-img {
 	height:50%;
 }
 @media only screen and (max-width: 950px) {
 	#content {
-		padding-top:40px;
-		padding-bottom:10px;
+		padding-top:12.6vh;
+		padding-bottom:3.15vh;
 	}
 	.text {
-		font-size:20px
+		font-size:3.7vw;
 	}
 	#main-img {
 		height:25%;
 	}
 	#button {
-		font-size:18px;
+		font-size:3.2vw;
+	}
+	#left-button, #right-button {
+		font-size:3vw;
+	}
+	#button-spacer {
+		width:15vw;
 	}
 }
 @media only screen and (max-width: 500px) {
@@ -49,12 +74,19 @@
 		padding-bottom:7.5vh;
 	}
 	.text {
-		font-size:7vw
+		font-size:7vw;
 	}
-	#main-img {
-		height:25%;
+	.break {
+		width:60%;
+		overflow-wrap: break-word;
 	}
 	#button {
 		font-size:5.5vw;
+	}
+	#left-button, #right-button {
+		font-size:5vw;
+	}
+	#button-spacer {
+		width:20vw;
 	}
 }
