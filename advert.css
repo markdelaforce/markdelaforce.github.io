@@ -31,16 +31,17 @@
 }
 @media only screen and (max-width: 950px) {
 	#content {
-		padding-top:7.5vh;
+		padding-top:40px;
+		padding-bottom:10px;
 	}
 	.text {
-		font-size:7vh;
+		font-size:20px
 	}
 	#main-img {
-		height:30%;
+		height:25%;
 	}
 	#button {
-		font-size:6vh;
+		font-size:18px;
 	}
 }
 @media only screen and (max-width: 500px) {
