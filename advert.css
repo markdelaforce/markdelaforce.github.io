@@ -17,10 +17,10 @@
 	text-align:center;
 	font-size:1.7vw;
 }
-#info {
+#button {
 	padding:8px;
 	font-size:1.4vw;
-	background:#6BAA75;
+	background:#3B60E4;
 	border:2px solid #000;
 	border-radius:5px;
 	box-shadow:2px 2px 3px #999;
@@ -29,9 +29,23 @@
 #main-img {
 	height:50%;
 }
+@media only screen and (max-width: 900px) {
+	#content {
+		padding-top:7.5vh;
+	}
+	.text {
+		font-size:12vw
+	}
+	#main-img {
+		height:35%;
+	}
+	#button {
+		font-size:10vw;
+	}
+}
 @media only screen and (max-width: 600px) {
 	#content {
-		padding-bottom:5vh;
+		padding-bottom:7.5vh;
 	}
 	.text {
 		font-size:7vw
@@ -39,7 +53,7 @@
 	#main-img {
 		height:25%;
 	}
-	#info {
+	#button {
 		font-size:5.5vw;
 	}
 }
